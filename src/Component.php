@@ -10,8 +10,8 @@
  *
  * @package   Backdrop
  * @author    Benjamin Lu <benlumia007@gmail.com>
- * @copyright 2019-2023. Benjamin Lu
- * @link      https://github.com/benlumia007/backdrop-template-hierarchy
+ * @copyright 2019-2026. Benjamin Lu
+ * @link      https://github.com/backdrop-dev/template-hierarchy
  * @license   https://www.gnu.org/licenses/gpl-2.0.html
  */
 
@@ -167,9 +167,6 @@ class Component implements Hierarchy {
 
 		// Get the queried post.
 		$post = get_queried_object();
-
-		// Decode the post name.
-		$name = urldecode( $post->post_name );
 
 		// Check for a custom post template.
 		$custom = get_page_template_slug( $post->ID );
