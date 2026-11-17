@@ -1,7 +1,10 @@
 {
     "name": "backdrop-dev/template-hierarchy",
     "description": "A smarter and flexible template hierarchy.",
-    "keywords": [ "classicpress", "wordpress" ],
+    "keywords": [
+        "classicpress",
+        "wordpress"
+    ],
     "homepage": "https://github.com/backdrop-dev/template-hierarchy",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -14,13 +17,15 @@
     ],
     "autoload": {
         "psr-4": {
-          "Backdrop\\Template\\Hierarchy\\": "src/"
-		},
+            "Backdrop\\Template\\Hierarchy\\": "src/"
+        },
         "files": [
             "src/functions-helpers.php"
         ]
     },
     "require": {
-        "php": ">=7.4"
+        "php": ">=7.4",
+        "backdrop-dev/framework": "^2.0",
+        "backdrop-dev/template-helpers": "^1.0.1"
     }
 }
